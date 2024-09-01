@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+ <div class=" flex flex-col  items-center mt- w-sc reen h-screen bg-blue-900">
+    <div class=" bg-pink-950 mt-[80px] rounded-lg h-[500px] ">
+        <div class="stats gap-10 p-[10px]  shadow-sm border-2 shadow-lime-950 outline-none rounded-lg flex justify-center bg-purple-800">
+            <div class="details ">
+                <h1 class="text-6xl font-">To Do APP</h1>
+                <p class="text-lg text-center">Keep It Up</p>
+                <div id="progressbar" class=" w-full h-[10px] rounded-full bg-fuchsia-900">
+                    <div id="progress" class=" mt-4 mb-10 w-0 h-[10px] rounded-full bg-slate-100"></div>
+                </div>
+    
+            </div>
+            <div class=" w-[100px] h-[100px] rounded-full bg-violet-950 flex justify-center items-center text-4xl font-bold text-b">
+                <p id="number">0/0</p>
+    
+            </div>
+        </div>
+        <form action="" class="mt-10 ml-2 w-[420px] flex justify-between gap-4">
+            <input id="taskinput" class="w-full rounded-full p-2 pl-2 text-2xl" type="text" placeholder="write your task">
+            <button id="newTask" class="rounded-full w-24 bg-green-900 hover:bg-zinc-500 text-2xl font-bold">add</button>
+        </form>
+        <ul class="tasklist ">
+    
+        </ul>
+    
+        
+        </div>
+    
+
+
+    </div>
+    
+ </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
